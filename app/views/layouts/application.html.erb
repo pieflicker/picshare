@@ -8,7 +8,35 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body id="body">
+
+  	<div id="header"> 
+	  <div id="header_img">
+	  	<p>Yasuka & Greg's Picshare</p>
+	  	<div id="logged_in">
+	  		
+	  	</div>
+	  </div>
+
+	  <div id="nav_bar">
+	  	<ul id="list">
+	  		<a href="/"><li class="nav_button"> Home </li></a>
+	  		<a href=""><li class="nav_button"> My Pictures </li></a>
+	  		<a href=""><li class="nav_button"> Upload </li></a>
+	  		<a href=""><li class="nav_button"> User Galleries </li></a>
+	  	</ul>
+
+	  	<div id="current_user">
+	  	
+	  	</div>
+
+	  </div>
+
+  	</div>
+
+  	<div id="content">
+    	<%= yield %>
+    </div>
+
   </body>
 </html>
