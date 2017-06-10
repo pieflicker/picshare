@@ -132,3 +132,50 @@
 	padding-top: 3px;
 
 }
+
+/* Signup and Login forms */
+
+#signup_spacer {
+	width:100%;
+	height: 20%;
+}
+
+#splash_box {
+	height: 32vh;
+	width: 23vw;
+	border: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+}
+
+#splash_box h1 {
+	margin: 7px;
+}
+
+.signup_input {
+	height: 10%;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	text-align: center;
+	font-size: 15px;
+}
+
+.btn-submit {
+	height: 10%;
+	width: 25%;
+	background-color: #8384B6;
+	border: 0px solid white;
+	margin-top: 10px;
+
+}
+
+.new_user {
+	height: 30vh;
+	width: 23vw;
+	margin-left: auto;
+	margin-right: auto;
+}

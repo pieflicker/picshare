@@ -1,2 +1,20 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+
+<div id="signup_spacer"></div>
+
+<div id="splash_box">
+
+	<h1> Sign up </h1>	
+
+		<%= form_for @user do |f| %>
+		<%= f.email_field :email, :placeholder => "e-mail", class: "signup_input" %> <br />
+		<%= f.text_field :first_name, :placeholder => "First name", class: "signup_input" %> <br />
+		<%= f.password_field :password, :placeholder => "Password", class: "signup_input" %> <br />
+		<%= f.password_field :password_confirmation, :placeholder => "Confirm password", class: "signup_input" %> <br />
+		<%= f.text_field :event_pin, :placeholder => "Event PIN", class: "signup_input" %> <br />
+		<%= f.submit "Sign up!", class: "btn-submit" %>
+		<% end %>
+		
+	
+
+
+</div>
