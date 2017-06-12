@@ -1,3 +1,8 @@
 
-
-<h1>new image</h1>
+<div>
+	<%= form_for @image, :html => {:multipart => true} do |f| %>
+		<%= f.file_field :image, "Select photos to upload" %> <br />
+		<%= f.hidden_field :uploaded_by, :value => current_user.id %>
+		<%= f.submit "Upload", class: "btn-submit" %>
+		<% end %>
+</div>

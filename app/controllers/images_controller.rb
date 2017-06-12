@@ -4,12 +4,12 @@ class ImagesController < ApplicationController
 		@images = Image.all
 	end
 
-	def new
-		@image = Image.new		
-	end
-
 	def show
 		@image = Image.find(params[:id])
+	end
+
+	def new
+		@image = Image.new		
 	end
 
 	def create
@@ -17,7 +17,7 @@ class ImagesController < ApplicationController
 			if @image.save
 				redirect_to root_url
 			else
-				render 'images/new'
+				render 'upload'
 			end
 	end
 
@@ -27,5 +27,8 @@ private
 	def image_params
 		params.require(:image).permit(:image, :uploaded_by, {images: []})
 	end
-
+  
+  def secret
+  	#notes
+  end
 end
