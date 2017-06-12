@@ -8,9 +8,9 @@ class UsersController < ApplicationController
   	@user = User.new(user_params)
   		
   		if @user[:event_pin] == event_pin
-		  	
+		  	@user[:email] = @user[:email].downcase
 		  	if @user.save
-		  		session[:user_id] = @user_id
+		  		session[:user_id] = @user.id
 		  		redirect_to '/'
 		  	else
 		  		flash[:notice] = "Something went wrong"

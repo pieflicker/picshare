@@ -1,0 +1,25 @@
+<div id="signup_spacer"></div>
+
+<div id="splash_box">
+	<div>
+		<h1 id="login_box"> Log in </h1>	
+
+			<%= form_for(:session, url: sessions_path) do |f| %>
+			<%= f.email_field :email, :placeholder => "e-mail", class: "signup_input" %> <br />
+			<%= f.password_field :password, :placeholder => "Password", class: "signup_input" %> <br />
+			<%= f.submit "Log in!", class: "btn-submit" %>
+			<% end %>
+	</div>
+
+	<div id="no_account_text"> 
+		<p> Don't have an account?</p> 
+	</div>
+
+	<a href="/signup"> 
+		<div id="signup_link"> Sign up!
+		</div> 
+	</a>
+	
+
+
+</div>
