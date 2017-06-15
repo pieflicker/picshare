@@ -1,5 +1,5 @@
 class Picture < ApplicationRecord
 
-	mount_uploader :image
+	mount_uploader :images
 	serialize :images, JSON
 end

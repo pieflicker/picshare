@@ -4,6 +4,10 @@ class ImagesUploader < CarrierWave::Uploader::Base
   # include CarrierWave::RMagick
    include CarrierWave::MiniMagick
 
+   def content_type_whitelist
+    /image\//
+   end
+
   # Choose what kind of storage to use for this uploader:
   storage :file
   # storage :fog
@@ -35,7 +39,7 @@ class ImagesUploader < CarrierWave::Uploader::Base
    end
 
    version :thumb do
-     process resize_to_fit: [437, 245]
+     process resize_to_fit: [350, 180]
    end
 
   # Add a white list of extensions which are allowed to be uploaded.
@@ -44,9 +48,6 @@ class ImagesUploader < CarrierWave::Uploader::Base
      %w(jpg jpeg gif png)
    end
 
-   def content_type_whitelist
-    /image\//
-   end
 
   # Override the filename of the uploaded files:
   # Avoid using model.id or version_name here, see uploader/store.rb for details.

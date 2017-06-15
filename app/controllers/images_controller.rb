@@ -25,7 +25,7 @@ class ImagesController < ApplicationController
 private
 
 	def image_params
-		params.require(:image).permit(:image, :uploaded_by, {images: []})
+		params.require(:image).permit(:image, :uploaded_by)
 	end
   
   def secret

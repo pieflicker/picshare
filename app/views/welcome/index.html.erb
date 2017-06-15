@@ -1,21 +1,8 @@
 
 
+<% Image.all.each do |i| %>
 <div id="preview_box">
-	<div id="preview_img"></div>
-	<div id="preview_uploader"> Uploaded by <%= current_user.first_name.humanize %> </div>
+	<div id="preview_img"><%= image_tag i.image_url(:thumb).to_s %> </div>
+	<div id="preview_uploader"> Uploaded by <%= i.uploaded_by.humanize %> </div>
 </div>
-
-<div id="preview_box">
-	<div id="preview_img"></div>
-	<div id="preview_uploader">Uploaded by username</div>
-</div>
-
-<div id="preview_box">
-	<div id="preview_img"></div>
-	<div id="preview_uploader"></div>
-</div>
-
-<div id="preview_box">
-	<div id="preview_img"></div>
-	<div id="preview_uploader"></div>
-</div>
+<% end %>

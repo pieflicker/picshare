@@ -128,8 +128,16 @@
 	border: 1px solid black;
 	margin-left: auto;
 	margin-right: auto;
+	overflow: hidden;
+	align-content: center;
+}
+
+#preview_img img {
+	display: block;
+	margin: auto;
 
 }
+
 
 #preview_uploader {
 	height: 13%;

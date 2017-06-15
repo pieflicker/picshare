@@ -31,6 +31,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 # Use Carrierwave for uploads
 gem 'carrierwave', '~> 1.0'
+
+gem 'mini_magick'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
