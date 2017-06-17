@@ -3,6 +3,7 @@
 	<%= form_for @image, :html => {:multipart => true} do |f| %>
 		<%= f.file_field :image %> <br />
 		<%= f.hidden_field :uploaded_by, :value => current_user.id %>
+		<%= f.hidden_field :uploader_name, :value => current_user.first_name.humanize %>
 		<%= f.submit "Upload", class: "btn-submit" %>
 		<% end %>
 </div>

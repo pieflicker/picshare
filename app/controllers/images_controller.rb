@@ -21,11 +21,15 @@ class ImagesController < ApplicationController
 			end
 	end
 
+	def my_images
+		@my_images = Image.where(uploaded_by: current_user)
+
+	end
 
 private
 
 	def image_params
-		params.require(:image).permit(:image, :uploaded_by)
+		params.require(:image).permit(:image, :uploaded_by, :uploader_name)
 	end
   
   def secret

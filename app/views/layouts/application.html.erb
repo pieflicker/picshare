@@ -3,7 +3,7 @@
   <head>
     <title>Picshare</title>
     <%= csrf_meta_tags %>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -29,7 +29,7 @@
 		  <div id="nav_bar">
 		  	<ul id="list">
 		  		<a href="/"><li class="nav_button"> Home </li></a>
-		  		<a href=""><li class="nav_button"> My Pictures </li></a>
+		  		<a href="/my-pictures"><li class="nav_button"> My Pictures </li></a>
 		  		<a href="/upload"><li class="nav_button"> Upload </li></a>
 		  		<a href=""><li class="nav_button"> User Galleries </li></a>
 		  	</ul>

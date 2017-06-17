@@ -53,6 +53,7 @@
 #logged_in {
 	height: 25%;
 	width: 20%;
+	float: top;
 }
 
 #logged_in ul {
@@ -223,4 +224,32 @@
 	color: black;
 	text-decoration: none;
 	border-radius: 3px;
+}
+
+/* Full image display */
+
+#full_pic {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 2%;
+	float: left;
+}
+
+#full_pic img {
+	display: block;
+	margin: auto;
+
+}
+
+#previous_img {
+	float: left;
+	margin-top: 25%;
+	margin-right: auto;
+}
+
+#next_img {
+	float: right;
+	margin-top: 25%
+	margin-left: auto;
 }
