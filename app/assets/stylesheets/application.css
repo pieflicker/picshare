@@ -238,18 +238,17 @@
 
 #full_pic img {
 	display: block;
-	margin: auto;
-
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #previous_img {
 	float: left;
 	margin-top: 25%;
-	margin-right: auto;
 }
 
 #next_img {
 	float: right;
-	margin-top: 25%
-	margin-left: auto;
+	margin-top: 25%;
+
 }
