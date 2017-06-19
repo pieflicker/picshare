@@ -38,9 +38,10 @@
 #header_img {
 	height: 70%;
 	width: 80%;
+	float: left;
+	padding-top: 4px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 4px;
 
 }
 
@@ -48,16 +49,22 @@
 	text-align: center;
 	font-size: 35px;
 	color: grey;
+	padding-left: 10%;
 }
 
 #logged_in {
 	height: 25%;
-	width: 20%;
-	float: top;
+	width: 15%;
+	float: right;
+	margin-top: 8px;
+	margin-right: 5px;
 }
 
 #logged_in ul {
 	list-style: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
 }
 
 #logged_in ul li a {
@@ -251,4 +258,22 @@
 	float: right;
 	margin-top: 25%;
 
+}
+
+/* image upload form */
+
+#upload_box {
+
+}
+
+#new_image {
+	margin-top: 20%;
+}
+#upload_box .btn-submit {
+	margin-top: 5%;
+	height: 35px;
+	font-size: 17px;
+}
+
+#upload_box .signup_input {
 }

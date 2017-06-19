@@ -1,5 +1,7 @@
 class ImagesController < ApplicationController
 
+	before_action :require_user
+
 	def index
 		@images = Image.all
 	end
@@ -23,8 +25,16 @@ class ImagesController < ApplicationController
 
 	def my_images
 		@my_images = Image.where(uploaded_by: current_user)
-
 	end
+
+	def gallery
+		@uploaders = Image.all.each do |u|
+			u.uploaded_by
+		end
+		@uploaders_u = @uploaders.uniq
+		
+	end
+
 
 private
 

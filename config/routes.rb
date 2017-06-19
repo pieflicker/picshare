@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 	delete 'logout', to: 'sessions#destroy'
 	get 'upload', to: 'images#new'
   get 'my-pictures', to: 'images#my_images'
+  get 'galleries', to: 'images#gallery'
 	#post 'upload', to: 'images#create'
   resources :users
   resources :sessions
