@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 	get 'upload', to: 'images#new'
   get 'my-pictures', to: 'images#my_images'
   get 'galleries', to: 'images#gallery'
+  get 'galleries/:id', to: 'images#gallery_view'
 	#post 'upload', to: 'images#create'
   resources :users
   resources :sessions

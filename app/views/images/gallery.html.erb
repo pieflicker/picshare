@@ -1,9 +1,10 @@
 
 <% @uploaders_u.each do |u| %>
 <div id="preview_box">
-	<a href="">
-		<div id="preview_img"> </div>
+	<a href="/galleries/<%= u.uploaded_by %>">
+		<div id="preview_img"><%= image_tag u.image_url(:thumb).to_s%> </div>
 	</a>
-	<div id="preview_uploader"> Uploaded by <%= %> </div>
+	<div id="preview_uploader"><%= u.uploader_name%>'s pictures </div>
 </div>
+<% @gallery_owner = u.uploaded_by %>
 <% end %>

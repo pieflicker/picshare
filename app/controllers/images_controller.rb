@@ -8,6 +8,8 @@ class ImagesController < ApplicationController
 
 	def show
 		@image = Image.find(params[:id])
+
+		@next_image = @image.id# += 1
 	end
 
 	def new
@@ -28,11 +30,12 @@ class ImagesController < ApplicationController
 	end
 
 	def gallery
-		@uploaders = Image.all.each do |u|
-			u.uploaded_by
-		end
-		@uploaders_u = @uploaders.uniq
-		
+		@uploaders = Image.all
+		@uploaders_u = @uploaders.uniq{|t| t.uploaded_by }
+	end
+
+	def gallery_view
+		@gallery = Image.where(uploaded_by: @uploaders_u)
 	end
 
 

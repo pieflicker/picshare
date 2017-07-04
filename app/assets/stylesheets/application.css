@@ -240,7 +240,8 @@
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2%;
-	float: left;
+	/*float: left;*/
+	overflow: hidden;
 }
 
 #full_pic img {
@@ -273,6 +274,7 @@
 	margin-top: 5%;
 	height: 35px;
 	font-size: 17px;
+	border-radius: 5px;
 }
 
 #upload_box .signup_input {
