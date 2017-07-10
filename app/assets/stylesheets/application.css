@@ -170,6 +170,7 @@
 	height: 32vh;
 	width: 23vw;
 	border: 1px solid black;
+	border-radius: 5px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
