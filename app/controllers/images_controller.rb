@@ -36,6 +36,9 @@ class ImagesController < ApplicationController
 
 	def gallery_view
 		@gallery = Image.where(uploaded_by: @uploaders_u)
+  	find_url = request.original_fullpath
+  	gallery_contents = find_url[-1]
+  	#@gallery_gen = Image.where (uploaded_by: gallery_contents)
 	end
 
 
@@ -46,6 +49,6 @@ private
 	end
   
   def secret
-  	#notes
+  	
   end
 end

@@ -110,11 +110,14 @@
 
 #content {
 	width: 80vw;
-	height: 82vh;
+	min-height: 82vh;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 3px;
 	background-color: #D1DEFF;
+	border-radius: 5px;
+	overflow-y: auto;
+	padding-bottom: 10px;
 }
 
 
