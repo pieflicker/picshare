@@ -296,3 +296,10 @@
 
 #upload_box .signup_input {
 }
+
+
+#footer {
+	height: 1px;
+	width: 80vw;
+	margin-top: 25px;
+}
