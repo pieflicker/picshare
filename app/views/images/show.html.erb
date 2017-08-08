@@ -1,6 +1,6 @@
 
 <div id="previous_img"> 
-	<i class="fa fa-arrow-left fa-4x"> </i>
+<a href="/images/<%=@image.id-=1%>"><i class="fa fa-arrow-left fa-4x"> </i> </a>
 </div>
 
 <div id="full_pic">
@@ -8,5 +8,5 @@
 </div>
 
 <div id="next_img">
-<a href="/images/<%=@next_img%>">	<i class="fa fa-arrow-right fa-4x"> </i> </a>
+<a href="/images/<%=@image.id+=1%>">	<i class="fa fa-arrow-right fa-4x"> </i> </a>
 </div>

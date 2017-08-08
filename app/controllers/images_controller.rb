@@ -8,8 +8,7 @@ class ImagesController < ApplicationController
 
 	def show
 		@image = Image.find(params[:id])
-
-		@next_image = @image.id# += 1
+		
 	end
 
 	def new
