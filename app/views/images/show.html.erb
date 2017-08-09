@@ -1,5 +1,16 @@
 
-<% @prev_image = @image.id-1 %>
+
+<% if @image.id >1 %>
+<% then @prev_image = @image.id-1 %>
+<% else @prev_image = 1 %>
+<% end %>
+
+<% if @image.id == Image.all.count%>
+<% then @next_img = @image.id %>
+<% else @next_img = @image.id+1 %>
+<% end %>
+
+
 <div id="previous_img"> 
 <a href="/images/<%=@prev_image%>"> <i class="fa fa-arrow-left fa-4x"> </i> </a>
 </div>
@@ -12,5 +23,5 @@
 </div>
 
 <div id="next_img">
-<a href="/images/<%=@image.id +=1%>">	<i class="fa fa-arrow-right fa-4x"> </i> </a>
+<a href="/images/<%=@next_img%>">	<i class="fa fa-arrow-right fa-4x"> </i> </a>
 </div>
