@@ -1,0 +1,8 @@
+<% @gallery.each do |i| %>
+<div id="preview_box">
+	<a href="/images/<%=i.id%>">
+	<div id="preview_img"> <%= image_tag i.image_url(:thumb).to_s  %>	</div>
+	</a>
+	<div id="preview_uploader"> Uploaded by <%= i.uploader_name %> </div>
+</div>
+<% end %>

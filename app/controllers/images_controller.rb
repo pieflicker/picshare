@@ -12,7 +12,8 @@ class ImagesController < ApplicationController
 	end
 
 	def new
-		@image = Image.new		
+		@image = Image.new
+
 	end
 
 	def create
@@ -20,7 +21,7 @@ class ImagesController < ApplicationController
 			if @image.save
 				redirect_to root_url
 			else
-				render 'upload'
+				render 'new'
 			end
 	end
 
@@ -44,9 +45,9 @@ class ImagesController < ApplicationController
 private
 
 	def image_params
-		params.require(:image).permit(:image, :uploaded_by, :uploader_name)
+		params.require(:image).permit(:uploaded_by, :uploader_name, :image)
 	end
-  
+
   def secret
   	
   end
