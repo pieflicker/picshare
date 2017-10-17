@@ -126,21 +126,28 @@
 #preview_box {
 	height: 20vh;
 	width: 24%;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
+	/*border-top: 1px solid black;
+	border-bottom: 1px solid black;*/
 	float: left;
 	margin-left: .75%;
 	margin-top: 8px;
+
 }
 
 #preview_img {
 	height: 85%;
 	width: 95%;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
+	border-radius: 3px;
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
 	align-content: center;
+
+}
+
+#preview_img:hover {
+box-shadow: 1px 1px 10px black;
 }
 
 #preview_img img {
@@ -153,7 +160,9 @@
 #preview_uploader {
 	height: 13%;
 	width: 93%;
-	border: 1px solid black;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom-right-radius: 7px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: right;

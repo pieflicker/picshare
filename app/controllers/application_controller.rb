@@ -12,12 +12,22 @@ private
 
   def require_user
   	redirect_to login_url unless current_user
+  
   end
 
   def authorize
   	redirect_to login_url, if current_user.nil?
   	end
   end
+
+  def admin
+    current_user == 1
+  end
+
+  def require_admin
+    redirect_to root_url unless admin
+  end
+
   helper_method :current_user
 
 end
